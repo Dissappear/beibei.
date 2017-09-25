@@ -1,0 +1,513 @@
+@charset "UTF-8";
+article,
+aside,
+blockquote,
+body,
+button,
+code,
+dd,
+details,
+div,
+dl,
+dt,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+hr,
+input,
+legend,
+li,
+menu,
+nav,
+ol,
+p,
+pre,
+section,
+td,
+textarea,
+th,
+ul {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative; }
+
+html,
+body,
+#app {
+  width: 100%; }
+
+body {
+  font-size: 12px;
+  background: #eee;
+  padding-bottom: 0.47rem; }
+
+a {
+  color: #333;
+  text-decoration: none; }
+
+input {
+  border: none;
+  outline: none; }
+
+li {
+  list-style: none; }
+
+.full-height {
+  height: 100%; }
+
+.navsfooter {
+  width: 100%;
+  height: 0.48rem;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  justify-content: space-around; }
+  .navsfooter a {
+    flex-flow: 1;
+    flex-shrink: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around; }
+    .navsfooter a span {
+      font-size: 0.07rem; }
+    .navsfooter a .iconfont {
+      font-size: 0.26rem; }
+
+.changePink {
+  color: #ff4965; }
+
+.nav-container {
+  width: 100%;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 0.41rem;
+  z-index: 1000;
+  background-color: #fff; }
+  .nav-container .nav-list {
+    background-color: #fff; }
+    .nav-container .nav-list .nav-item {
+      width: auto;
+      padding: 0 0.2rem;
+      display: inline-block;
+      line-height: 0.41rem;
+      font-size: 0.13rem;
+      text-align: center; }
+
+.zhanwei {
+  height: 0.41rem;
+  width: 100%;
+  position: relative;
+  z-index: -100; }
+
+.checkedPink {
+  color: #ff4965;
+  padding-bottom: 0.12rem;
+  border-bottom: 0.01rem solid #ff4965; }
+
+.new__list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.04rem 0;
+  background-color: #fff; }
+  .new__list a {
+    width: 50%;
+    height: 　2 0.69rem;
+    display: block;
+    box-sizing: border-box;
+    box-shadow: 0 0 0.005rem #ccc; }
+    .new__list a .list__img {
+      padding: 0.05rem; }
+      .new__list a .list__img img {
+        width: 1.81rem;
+        height: 1.86rem;
+        display: block; }
+    .new__list a .info__wrapper {
+      box-sizing: border-box;
+      width: 100%;
+      height: 0.77rem;
+      padding: 0 0.1rem; }
+      .new__list a .info__wrapper .price__wrapper .price {
+        color: #FF4965;
+        font-size: 0.1rem;
+        font-weight: 600; }
+        .new__list a .info__wrapper .price__wrapper .price span {
+          font-size: 0.15rem; }
+      .new__list a .info__wrapper .price__wrapper .discount__tag {
+        float: right;
+        border: 1px solid rgba(255, 73, 101, 0.5);
+        border-radius: 0.02rem;
+        display: inline-block;
+        font-size: 0.05rem;
+        background-color: #fff;
+        box-sizing: border-box;
+        padding: 0.01rem;
+        color: #ff4965; }
+      .new__list a .info__wrapper .list__title {
+        font-size: 0.14rem;
+        margin: 0.06rem 0;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      .new__list a .info__wrapper .sub__info {
+        color: #999; }
+        .new__list a .info__wrapper .sub__info .num__desc {
+          float: right; }
+  .new__list .LooklistGlass {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: -1000rem;
+    background: rgba(255, 255, 255, 0.5); }
+
+.detail__box {
+  height: 100%; }
+
+.detail__banner {
+  width: 100%;
+  height: 3.75rem;
+  background-color: #fff;
+  position: relative;
+  overflow: hidden; }
+  .detail__banner ul li {
+    width: 100%;
+    height: 3.75rem; }
+    .detail__banner ul li img {
+      width: 100%;
+      height: 3.75rem; }
+
+.detail__box {
+  background-color: #fff; }
+  .detail__box .detail__info {
+    padding: 0 0.12rem; }
+    .detail__box .detail__info p:last-child {
+      line-height: 0.44rem;
+      color: #3d3d3d;
+      overflow: hidden;
+      white-space: nowrap;
+      word-break: break-all;
+      text-overflow: ellipsis;
+      font-size: 0.13rem; }
+    .detail__box .detail__info .detail__price p:nth-child(1) {
+      font-size: 0.15rem;
+      color: #FF4965; }
+      .detail__box .detail__info .detail__price p:nth-child(1) s {
+        padding-left: 0.05rem;
+        color: #333;
+        font-size: 0.1rem; }
+      .detail__box .detail__info .detail__price p:nth-child(1) .price__show {
+        font-size: 0.25rem;
+        font-weight: 500; }
+      .detail__box .detail__info .detail__price p:nth-child(1) .you__info {
+        color: #fff;
+        margin: 0 0.05rem;
+        font-size: 0.1rem;
+        padding: 0 0.05rem;
+        border-radius: 0.01rem; }
+    .detail__box .detail__info .detail__price p:nth-child(2) {
+      color: #8f8f8f;
+      margin: 0; }
+    .detail__box .detail__info .detail__price p {
+      margin: 0.1rem 0; }
+    .detail__box .detail__info .detail__title {
+      font-size: 0.15rem; }
+    .detail__box .detail__info .detail__desc {
+      margin-top: 0.1rem;
+      font-size: 0.13rem;
+      line-height: 0.18rem;
+      color: #3d3d3d; }
+    .detail__box .detail__info .tuan__info {
+      margin-top: 0.2rem; }
+      .detail__box .detail__info .tuan__info .tuan__info--title {
+        font-size: 0.14rem;
+        color: #3d3d3d; }
+      .detail__box .detail__info .tuan__info .taun__info--user {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.1rem;
+        padding-bottom: 0.1rem; }
+        .detail__box .detail__info .tuan__info .taun__info--user .tuan__user--nick {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 0.03rem; }
+          .detail__box .detail__info .tuan__info .taun__info--user .tuan__user--nick img {
+            width: 0.4rem;
+            height: 0.4rem;
+            border-radius: 0.2rem; }
+          .detail__box .detail__info .tuan__info .taun__info--user .tuan__user--nick span {
+            padding-left: 0.1rem;
+            display: flex;
+            flex-flow: column;
+            padding-top: 0.05rem; }
+            .detail__box .detail__info .tuan__info .taun__info--user .tuan__user--nick span b {
+              font-size: 0.08rem;
+              font-weight: 500;
+              max-width: 1rem;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap; }
+            .detail__box .detail__info .tuan__info .taun__info--user .tuan__user--nick span i {
+              color: #666;
+              font-style: normal; }
+        .detail__box .detail__info .tuan__info .taun__info--user .tuan__user--num {
+          margin-top: 0.1rem;
+          display: flex;
+          justify-content: space-between; }
+          .detail__box .detail__info .tuan__info .taun__info--user .tuan__user--num .num__left {
+            display: flex;
+            flex-flow: column;
+            justify-content: space-around; }
+          .detail__box .detail__info .tuan__info .taun__info--user .tuan__user--num button {
+            width: 0.7rem;
+            height: 0.3rem;
+            border-radius: 0.3rem;
+            border: 1px solid rgba(255, 73, 101, 0.7);
+            color: #ff4965;
+            font-weight: 700;
+            line-height: 0.3rem;
+            text-align: center;
+            background-color: #fff;
+            margin: 0.03rem 0 0 0.1rem; }
+  .detail__box .detail__title {
+    height: 0.36rem; }
+    .detail__box .detail__title .title__bg {
+      width: 0.39rem;
+      height: 0.15rem;
+      display: inline-block;
+      position: relative;
+      top: 0.02rem;
+      margin-right: 0.01rem; }
+
+.detail__footer {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #fff;
+  height: 0.48rem;
+  justify-content: space-between; }
+  .detail__footer .detail__footer--link {
+    display: flex; }
+    .detail__footer .detail__footer--link a {
+      display: flex;
+      width: 0.6rem;
+      flex-flow: column;
+      justify-content: space-around;
+      align-items: center; }
+      .detail__footer .detail__footer--link a span {
+        font-size: 0.11rem; }
+      .detail__footer .detail__footer--link a .iconfont {
+        font-size: 0.22rem; }
+  .detail__footer .detail__footer--btn {
+    color: #fff;
+    font-weight: 500;
+    flex-grow: 1;
+    flex-shrink: 1;
+    display: flex;
+    justify-content: space-between; }
+    .detail__footer .detail__footer--btn .detail__old--price {
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      width: 50%;
+      background-color: rgba(255, 73, 100, 0.6);
+      font-size: 0.13rem; }
+      .detail__footer .detail__footer--btn .detail__old--price span:nth-child(1) span {
+        font-size: 0.18rem; }
+    .detail__footer .detail__footer--btn .detail__tuan--price {
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      width: 50%;
+      font-size: 0.13rem;
+      background-color: #ff4965; }
+      .detail__footer .detail__footer--btn .detail__tuan--price span:nth-child(1) span {
+        font-size: 0.18rem; }
+
+.hotWordNav {
+  width: 100%;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  font-size: 14px;
+  background: #FFF; }
+  .hotWordNav .swiper-container {
+    width: 85%;
+    display: inline-block; }
+    .hotWordNav .swiper-container .swiper-wrapper .swiper-slide {
+      width: auto; }
+    .hotWordNav .swiper-container .swiper-wrapper .hotWord-item {
+      display: inline-block;
+      padding: 0 0.15rem; }
+  .hotWordNav .hotWord-right {
+    display: inline-block;
+    height: 0.4rem;
+    width: 15%;
+    z-index: 1;
+    position: relative;
+    background: #FFF;
+    top: -0.14rem; }
+    .hotWordNav .hotWord-right .opacity {
+      position: absolute;
+      opacity: 0.5;
+      display: inline-block;
+      right: 0.39rem;
+      background: #FFF;
+      width: 0.4rem;
+      height: 100%; }
+    .hotWordNav .hotWord-right .listSearch {
+      width: 60%;
+      height: 100%;
+      padding-left: 0.2rem;
+      display: inline-block;
+      font-size: 0.2rem;
+      text-align: center;
+      line-height: 2; }
+  .hotWordNav .todayBanner {
+    width: 100%; }
+
+.todayBanner-img {
+  width: 3.75rem;
+  display: block; }
+
+.todayHotImgs {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem; }
+  .todayHotImgs .today-imgs-left {
+    height: 2.15rem; }
+    .todayHotImgs .today-imgs-left img {
+      width: 100%;
+      height: 100%; }
+  .todayHotImgs .today-imgs-right {
+    overflow: hidden;
+    height: 2.15rem; }
+    .todayHotImgs .today-imgs-right img {
+      width: 1.1rem;
+      height: 1.07rem; }
+    .todayHotImgs .today-imgs-right .today-imgs-right__item {
+      width: 1.1rem;
+      height: 1.07rem;
+      float: right; }
+
+.todaygoods {
+  background: #fff; }
+  .todaygoods h2 {
+    text-align: center;
+    font-weight: normal;
+    color: #333;
+    border-bottom: 1px solid #eee;
+    padding: 0.1rem 0; }
+  .todaygoods .todaygood .today-title {
+    padding: 0.07rem 0.12rem;
+    height: 0.32rem;
+    line-height: 0.32rem; }
+    .todaygoods .todaygood .today-title img {
+      width: 0.32rem;
+      height: 0.32rem;
+      float: left; }
+    .todaygoods .todaygood .today-title .today-item-name {
+      float: left;
+      margin-left: 0.05rem;
+      font-size: 0.14rem; }
+    .todaygoods .todaygood .today-title .today-item-info {
+      margin-left: 0.05rem;
+      float: left;
+      color: #999;
+      font-size: 0.07; }
+    .todaygoods .todaygood .today-title .today-much {
+      float: right; }
+  .todaygoods .todaygood .today-content {
+    width: 100%;
+    display: flex; }
+    .todaygoods .todaygood .today-content .today-content-item {
+      width: 50%;
+      display: inline-block;
+      border: 1px solid #eee;
+      padding: 0.1rem; }
+      .todaygoods .todaygood .today-content .today-content-item .today-content-item-img {
+        text-align: center; }
+        .todaygoods .todaygood .today-content .today-content-item .today-content-item-img img {
+          width: 80%; }
+      .todaygoods .todaygood .today-content .today-content-item .today-content-item-details .today-item-price p {
+        display: inline-block; }
+      .todaygoods .todaygood .today-content .today-content-item .today-content-item-details .today-item-price .today-item-price-new .currency {
+        font-weight: 600;
+        color: #ff4965; }
+      .todaygoods .todaygood .today-content .today-content-item .today-content-item-details .today-item-price .today-item-price-new .price-num {
+        font-size: 0.2rem;
+        color: #ff4965;
+        font-weight: 600; }
+      .todaygoods .todaygood .today-content .today-content-item .today-content-item-details .today-item-price .today-item-price-new .price-little {
+        font-weight: 600;
+        color: #ff4965; }
+      .todaygoods .todaygood .today-content .today-content-item .today-content-item-details .today-item-price .today-item-price-old {
+        padding-left: 0.05rem;
+        color: #999;
+        text-decoration: line-through; }
+      .todaygoods .todaygood .today-content .today-content-item .today-content-item-details .today-item-title {
+        width: 100%;
+        color: #3d3d3d;
+        text-align: left;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 0.15rem;
+        white-space: nowrap; }
+
+.today_list-headerSearch {
+  height: 0.7rem;
+  padding: 0.1rem;
+  position: relative; }
+  .today_list-headerSearch input {
+    height: 0.34rem;
+    padding: 0.05rem;
+    border: 2px solid #eee;
+    border-radius: 0.05rem;
+    width: 100%;
+    padding-left: 0.3rem;
+    font-size: 0.15rem; }
+  .today_list-headerSearch span {
+    display: block;
+    position: absolute;
+    top: 0.2rem;
+    left: 0.22rem; }
+
+.today_list-title {
+  height: 0.3rem;
+  width: 100%;
+  padding-left: 0.1rem;
+  font-size: 0.14rem; }
+
+.today_list-content {
+  display: flex;
+  background: #fff;
+  flex-wrap: wrap; }
+  .today_list-content .today_list-content-item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 0.92rem;
+    height: 1.05rem;
+    font-size: 0.14rem; }
+    .today_list-content .today_list-content-item img {
+      width: 0.6rem;
+      height: 0.6rem; }

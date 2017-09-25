@@ -1,0 +1,90 @@
+html,body{
+    width:100%;
+    height:100%;
+    background: #f2f4f7;
+}
+*{
+   box-sizing: border-box;margin:0 ;padding: 0;
+}
+.mine_register{
+    position: relative;
+    width:100%;
+    margin-top:.15rem;
+        .btnFind{
+            position: absolute;
+            top:7px;
+            font-size: .1rem;
+            padding:.02rem .05rem;
+            background:#fff;
+            border-radius: .06rem;
+            color:#ff4965;
+            border:1px solid #F6AAB6;
+            right:10px;
+        }   
+            .userYanzheng,.userPhoneName,.userPhonePassword{
+                color:#ccc;
+                padding-left:.5rem;
+                font-size: 14px;
+                width:100%;
+                line-height:0.44rem;
+                background-color: #fff;
+            }
+            .DL-yzm{
+                font-size: .3rem;
+                position: absolute;
+                top:.07rem;
+                left:.12rem;
+                color: #777
+            }
+            .DX-yzm{
+                font-size: .3rem;
+                position: absolute;
+                top:.5rem;
+                left:.12rem;
+                color: #777
+            }
+            .SZ-mm{
+                font-size: .3rem;
+                position: absolute;
+                top:.93rem;
+                left:.12rem;
+                color: #777
+            }
+            
+}
+.fastBtn{
+    width: 100%;
+    padding:.2rem .1rem;
+    .fastLogin{
+        width:100%;
+        height:.42rem;
+        border:none;
+        border-radius: 5px;
+        display: flex;
+        font-size: 14px;
+        align-items: center;
+        justify-content: center;
+        background:#ff4965;
+        flex-grow: 1;
+        flex-direction: column;
+        color:#fff;
+    }
+}
+.agreement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+        h4{
+            padding:3px;
+            color:#999;
+                span{
+                    color:#ED6277;
+                }
+        }
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+color: #ccc;
+}

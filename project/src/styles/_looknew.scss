@@ -1,0 +1,119 @@
+
+
+
+.nav-container {
+   width: 100%;
+   overflow: hidden;
+   position: fixed;
+   top: 0;
+   left:0; 
+    height: 0.41rem;
+   z-index:1000; 
+    background-color: #fff;
+    .nav-list { 
+         
+        background-color: #fff; 
+        .nav-item {
+            
+            width: auto; 
+            padding: 0 0.2rem;
+            display: inline-block;
+            line-height: 0.41rem;
+            font-size: 0.13rem;
+            text-align:center;
+            
+            
+        }
+    } 
+}
+.zhanwei {
+    height: 0.41rem;
+    width: 100%;
+    position: relative;
+    z-index: -100;  
+}
+// 看新品的页面的上面的导航栏的选中的样式
+.checkedPink {
+    color: #ff4965;
+    padding-bottom: 0.12rem;
+    border-bottom: 0.01rem solid #ff4965;
+}
+
+// 下面的商品的list的样式
+
+.new__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.04rem 0;
+    background-color: #fff;
+    // margin-top: 0.41rem;
+    a {
+        width: 50%;
+        height:　2.69rem;
+        display: block;
+        box-sizing: border-box;
+        box-shadow: 0 0 0.005rem #ccc;
+        .list__img {
+            padding: 0.05rem;
+            img {
+                width: 1.81rem;
+                height: 1.86rem;
+                display: block;
+            }
+            
+        }
+        .info__wrapper { 
+            box-sizing: border-box;
+            width: 100%; 
+            height: 0.77rem;
+            padding: 0 0.1rem;
+            .price__wrapper {
+                .price {
+                    color:#FF4965;
+                    font-size: 0.1rem;
+                    font-weight: 600;
+                    span {
+                        font-size: 0.15rem; 
+                    }
+                    
+                }
+                .discount__tag {
+                    float:right;
+                    border: 1px solid rgba(255,73,101,.5);
+                    border-radius: 0.02rem; 
+                    display: inline-block; 
+                    font-size: 0.05rem; 
+                    background-color: #fff; 
+                    box-sizing: border-box; 
+                    padding: 0.01rem;   
+                    color:#ff4965;  
+                }
+                
+            }
+            .list__title {
+                font-size: 0.14rem;
+                margin: 0.06rem 0; 
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                
+            }
+            .sub__info {
+                color: #999;       
+                .num__desc {
+                    float: right;  
+                } 
+            }
+        }
+    }
+    .LooklistGlass{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        bottom: -1000rem;
+        background:rgba(255,255,255,.5);
+        
+    }
+}

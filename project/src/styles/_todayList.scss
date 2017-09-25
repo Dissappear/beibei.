@@ -1,0 +1,47 @@
+.today_list-headerSearch{
+    height:0.7rem;
+    padding:0.1rem;
+    position: relative;
+    input{
+        height:0.34rem;
+        padding:0.05rem;
+        border:2px solid #eee;
+        border-radius:0.05rem;
+        width:100%;
+        padding-left:0.3rem;
+        font-size:0.15rem;
+    }
+    span{
+        display: block;
+        position: absolute;
+        top:0.2rem;
+        left:0.22rem;
+    }
+
+}
+.today_list-listLogs{
+
+}
+.today_list-title{
+    height:0.3rem;
+    width:100%;
+    padding-left:0.1rem;
+    font-size: 0.14rem;
+}
+.today_list-content{
+    display: flex;
+    background: #fff;
+    flex-wrap:wrap;
+    .today_list-content-item{
+        display: flex;
+        align-items:center;
+        flex-direction: column;
+        width:0.92rem;
+        height:1.05rem;
+        font-size:0.14rem;
+        img{
+            width:0.6rem;
+            height:0.6rem;
+        }
+    }
+}

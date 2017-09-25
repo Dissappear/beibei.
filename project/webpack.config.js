@@ -10,21 +10,27 @@ module.exports = {
     },
     devServer:{
         proxy:{
-            '/list':{
-                target:'https://m.toutiao.com',
-                changeOrigin:true,
-                secure:false
-            },
-            '/api':{
-                target:'https://m.toutiao.com',
-                changeOrigin:true,
-                pathRewrite: {'^/api' : ''}
-            },
-            '/ele':{
-                target:'https://restapi.ele.me',
-                changeOrigin:true,
-                pathRewrite: {'^/ele' : ''}
+            // '/list':{
+            //     target:'https://m.toutiao.com',
+            //     changeOrigin:true,
+            //     secure:false
+            // },
+            // '/api':{
+            //     target:'https://m.toutiao.com',
+            //     changeOrigin:true,
+            //     pathRewrite: {'^/api' : ''}
+            // },
+            // '/ele':{
+            //     target:'https://restapi.ele.me',
+            //     changeOrigin:true,
+            //     pathRewrite: {'^/ele' : ''}
+            // },
+            '/looknew':{
+                target:'http://dsapi.beibei.com',
+                changeOrigin: true,
+                pathRewrite: {'^/looknew' : ''}
             }
+        
         },
 		contentBase:'./build',//服务器要在哪个地方开启，默认是在webpack.config.js的路径中
 		port:9000,//端口

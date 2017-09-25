@@ -1,0 +1,96 @@
+html,body{
+    width:100%;
+    height:100%;
+    background: #f2f4f7;
+}
+*{
+   box-sizing: border-box;margin:0 ;padding: 0;
+}
+.mine_login{
+    
+    width:100%;
+    margin-top:.15rem;
+            .userName,.userPassword{
+                color:#ccc;
+                padding-left:.5rem;
+                width:100%;
+                line-height:0.44rem;
+                background-color: #fff;
+            }
+            .passIcon{
+                font-size: .3rem;
+                position: absolute;
+                top:.2rem;
+                left:.12rem;
+                color: #777
+            }
+            .userIcon{
+                position: absolute;
+                font-size:.3rem;
+                top:.64rem;
+                left:.12rem;
+                color: #777
+            }
+            .pass{
+                display: flex;
+                    .userYanzheng{
+                        width:60%;
+                        padding-left:.2rem;
+                        line-height:0.44rem;
+                        background-color: #fff;
+                        flex-grow: 1;
+                        flex-shrink: 1;
+                    }
+                    span{
+                        display: flex;
+                        align-items: center;
+                        color:#f0f;
+                        font-size: .2rem;
+                        justify-content: center;
+                        background:#fff;
+                        flex-grow: 1;
+                        flex-shrink: 1;
+                        flex-direction: column;
+                    }
+            }  
+}
+
+.fastBtn{
+    width: 100%;
+    padding:.2rem .1rem;
+    .fastLogin{
+        width:100%;
+        height:.42rem;
+        border:none;
+        border-radius: 5px;
+        font-size:18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:#ff4965;
+        flex-grow: 1;
+        flex-direction: column;
+        color:#fff;
+    }
+}
+
+.loginNav{
+    width:100%;
+    display: flex;  
+    a,span{
+        display: flex;
+        flex: 1;
+        justify-content: center;
+        align-items: center;
+        color:#999;
+        font-weight: 700;
+        font-size: 14px;
+    }
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+color: #ccc;
+}
+
+
+
